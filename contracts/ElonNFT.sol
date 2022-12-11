@@ -16,7 +16,10 @@ contract ElonNFT is ERC721URIStorage {
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
         _mint(msg.sender, newItemId);
-        _setTokenURI(newItemId, "Hello World");
+        _setTokenURI(
+            newItemId,
+            "https://jsonkeeper.com/b/EDCG"
+        );
         console.log(
             "The NFT ID %s has been minted to %s",
             newItemId,
